@@ -11,7 +11,7 @@ module.exports = defineConfig({
 					 changeOrigin: true,
 					 //https
 					 secure: false,
-					 target: 'http://152.136.57.19:5555/api/private/v1',
+					 target: 'http://api.lijunnan.asia/api/private/v1',
 					 pathRewrite: {
 							"^/api": ""
 					 }

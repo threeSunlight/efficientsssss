@@ -45,7 +45,10 @@ const submitForm = async (formEl: FormInstance | undefined) => {
   await formEl.validate((valid, fields) => {
     if (valid) {
 			//@ts-ignore
-      Login(ruleForm).then((res: TS.LoginRes) => {
+      Login(ruleForm).then((res: TS.allResInfo) => {
+        console.log(res,'res');
+        let {data,meta} = res
+        localStorage.setItem('token', data.token)
 				 // 先把token储存到本地
 
 			})
